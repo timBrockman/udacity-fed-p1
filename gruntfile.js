@@ -24,6 +24,16 @@ module.exports = function(grunt){
 				}]
 			}
 		},
+		imagemin:{
+			dynamic:{
+				files:[{
+					expand:true,
+					cwd:'images/'
+					src:['**/*.{png,jpg,gif}'],
+					dest:'images/build/'
+				}]
+			}
+		},
 		copy:{
 			dev:{
 				files:[{
@@ -39,5 +49,5 @@ module.exports = function(grunt){
 	grunt.loadNpmTasks('grunt-contrib-concat');
 	grunt.loadNpmTasks('grunt-responsive-images');
 	grunt.loadNpmTasks('grunt-contrib-imagemin');
-	grunt.registerTask('default', ['copy'])//,'responsive_images','concat']);
+	grunt.registerTask('default', ['copy', 'imagemin'])//,'responsive_images','concat']);
 }
