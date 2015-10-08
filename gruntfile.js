@@ -32,7 +32,7 @@ module.exports = function(grunt){
 			    },
 				files:[{
 					expand: true,
-					src: ['app/img/**/*.{jpg,gif,png}'],
+					src: ['img/**/*.{jpg,gif,png}'],
 					cwd:'src/',
 					dest:'dist/'
 				}]
@@ -42,7 +42,7 @@ module.exports = function(grunt){
 			dev:{
 				files:[{
 					expand: true,
-					src: ['app/img/**/*.{jpg,gif,png}'],
+					src: ['img/**/*.{jpg,gif,png}'],
 					cwd:'src/',
 					dest:'dist/'
 				}]
@@ -52,7 +52,7 @@ module.exports = function(grunt){
 			dev:{
 				files:[{
 					expand:true,
-					src:['**/*', '!app/img/**/*.*'],
+					src:['**/*', '!img/**/*.*'],
 					cwd: 'src/',
 					dest: 'dist/'
 				}]
@@ -63,5 +63,5 @@ module.exports = function(grunt){
 	grunt.loadNpmTasks('grunt-contrib-concat');
 	grunt.loadNpmTasks('grunt-responsive-images');
 	grunt.loadNpmTasks('grunt-contrib-imagemin');
-	grunt.registerTask('default', ['copy', ,'responsive_images']);//,'imagemin']);//,'concat']);
+	grunt.registerTask('default', ['copy', 'responsive_images']);//,'imagemin']);//,'concat']);
 }
