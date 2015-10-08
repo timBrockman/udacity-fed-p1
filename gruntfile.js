@@ -16,6 +16,20 @@ module.exports = function(grunt){
 		},
 		responsive_images: {
 			dev:{
+				options:{
+					engine: 'im',
+			        sizes: [{
+			            name: 'small',
+			            width: '30%',
+			            suffix: '_small',
+			            quality: 20
+			        },{
+			            name: 'large',
+			            width: '50%',
+			            suffix: '_large',
+			            quality: 40
+			        }]
+			    },
 				files:[{
 					expand: true,
 					src: ['app/img/**/*.{jpg,gif,png}'],
@@ -49,5 +63,5 @@ module.exports = function(grunt){
 	grunt.loadNpmTasks('grunt-contrib-concat');
 	grunt.loadNpmTasks('grunt-responsive-images');
 	grunt.loadNpmTasks('grunt-contrib-imagemin');
-	grunt.registerTask('default', ['copy', 'imagemin']);//,'responsive_images','concat']);
+	grunt.registerTask('default', ['copy', ,'responsive_images']);//,'imagemin']);//,'concat']);
 }
