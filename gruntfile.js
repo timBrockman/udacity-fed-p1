@@ -38,7 +38,14 @@ module.exports = function(grunt){
             suffix: '_xl',
             quality: 65
           }]
-        }}},
+        },
+        files: [{
+          expand: true,
+          src: ['*.{gif,jpg,png}'],
+          cwd: 'src/images/',
+          dest: 'dist/images/'
+        }]
+    }},
 	imagemin: {
 			dev:{
 				files:[{
