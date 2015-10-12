@@ -8,10 +8,10 @@ module.exports = function(grunt){
 		concat: {
 			dist:{
 				src:[
-					'src/js/sanity1.js',
-					'src/js/sanity2.js'
+					'src/css/grid.css',
+					'src/css/app.css'
 				],
-				dest:'dist/js/isSane.js'
+				dest:'dist/css/main.css'
 			}
 		},
 	responsive_images: {
