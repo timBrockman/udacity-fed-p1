@@ -14,31 +14,32 @@ module.exports = function(grunt){
 				dest:'dist/js/isSane.js'
 			}
 		},
-		responsive_images: {
-			dev:{
-				options:{
-					engine: 'im',
-			        sizes: [{
-			            name: 'small',
-			            width: '30%',
-			            suffix: '_small',
-			            quality: 20
-			        },{
-			            name: 'large',
-			            width: '50%',
-			            suffix: '_large',
-			            quality: 40
-			        }]
-			    },
-				files:[{
-					expand: true,
-					src: ['img/**/*.{jpg,gif,png}'],
-					cwd:'src/',
-					dest:'dist/'
-				}]
-			}
-		},
-		imagemin: {
+	responsive_images: {
+      dev: {
+        options: {
+          engine: 'im',
+          sizes: [{
+            width: '320px',
+            suffix: '_sm',
+            quality: 65
+          },
+          {
+            width: '640px',
+            suffix: '_md',
+            quality: 65
+          },
+          {
+            width: '960px',
+            suffix: '_lg',
+            quality: 65
+          },
+          {
+            width: '1920px',
+            suffix: '_xl',
+            quality: 65
+          }]
+        }}},
+	imagemin: {
 			dev:{
 				files:[{
 					expand: true,
