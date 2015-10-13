@@ -8,6 +8,7 @@ module.exports = function(grunt){
 		concat: {
 			dist:{
 				src:[
+					'src/css/base.css',
 					'src/css/grid.css',
 					'src/css/app.css'
 				],
@@ -60,7 +61,7 @@ module.exports = function(grunt){
 			dev:{
 				files:[{
 					expand:true,
-					src:['**/*', '!img/**/*.*'],
+					src:['**/*', '!img/**/*.*', '!css/**/*.*'],
 					cwd: 'src/',
 					dest: 'dist/'
 				}]
