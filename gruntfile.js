@@ -64,7 +64,11 @@ module.exports = function(grunt){
 					src:['**/*', '!img/**/*.*', '!css/**/*.*'],
 					cwd: 'src/',
 					dest: 'dist/'
-				}]
+				},
+				{expand:true,
+				src:'*.*',
+				cwd:'dist/css/',
+				dest:'src/css/'}]
 			}
 		}
 	});
