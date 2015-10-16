@@ -1,5 +1,4 @@
 header, section, footer{
-	color:#747704;
 	font-family: lato, sans-serif;
 	font-size: 14px;
 }
@@ -24,5 +23,17 @@ h2{
 	font-size: 1.5rem;
 	font-weight: normal;
 	text-transform: capitalize;
-	color:#bcbbbb;
+}
+h3{
+	font-size: 1.75rem;
+	line-height: 1.5rem;
+	font-weight: normal;
+	/*font-variant: small-caps;*/
+	text-transform: uppercase;	
+}
+.vig{
+	text-align: center;
+}
+.billboard{
+	text-align: center;
 }
