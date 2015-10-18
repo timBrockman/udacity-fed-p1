@@ -1,32 +1,39 @@
-header{
-	border-bottom: 2px solid #bcbbbb;
-}
-.masthead{
-	text-align: right;
-}
 h1{
+	margin:1rem 0;
 	font-size: 2.25rem;
 	line-height: 1.5rem;
 	font-weight: 100;
 	/*font-variant: small-caps;*/
 	text-transform: uppercase;
 }
-.submast{
-	font-size: 1rem;
-	font-weight: normal;
-}
 h2{
+	margin:1rem 0;
 	font-size: 1.5rem;
 	font-weight: normal;
 	text-transform: capitalize;
 }
 h3{
+	margin:.5rem 0;
 	font-size: 1.75rem;
 	line-height: 1.5rem;
 	font-weight: normal;
 	/*font-variant: small-caps;*/
 	text-transform: uppercase;	
 }
+section:first-of-type{
+	border-top: 2px solid #bcbbbb;
+}
+.masthead{
+	text-align: right;
+}
+.tim{
+	letter-spacing: .03rem;
+}
+.submast{
+	font-size: 1rem;
+	font-weight: normal;
+}
+
 .vig{
 	text-align: center;
 }

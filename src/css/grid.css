@@ -7,6 +7,7 @@
 header, section, footer, nav{
 	width:100%;
 	position: relative;
+	float: left;
 }
 /*header:after,
 section:after,
@@ -20,14 +21,16 @@ nav:after,
 }*/
 .row{
 	width: 100%;
-	display: flex;
+	display: block;
 	box-sizing: border-box;
 }
 .w-1-1, .w-1-3{
 	width: 100%;
+	float:left;
 	max-width: 100%;
 }
 .w-1-2{
 	width: 50%;
+	float: left;
 	max-width: 50%;
 }
