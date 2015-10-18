@@ -3,6 +3,7 @@
 	width: 100%;
 	max-width: 60rem;
 	padding: 0 0.5rem;
+	box-sizing:border-box;
 }
 header, section, footer, nav{
 	width:100%;
@@ -24,13 +25,23 @@ nav:after,
 	display: block;
 	box-sizing: border-box;
 }
-.w-1-1, .w-1-3{
+.w-1-1, .w-1-2, .w-1-3{
 	width: 100%;
 	float:left;
-	max-width: 100%;
+	min-width: 100%;
 }
-.w-1-2{
-	width: 50%;
-	float: left;
-	max-width: 50%;
+
+
+@media screen and (min-width:400px) and (max-width:639px){
+	.w-1-2{
+		width: 50%;
+		min-width: 50%;
+	}
+	.w-1-3{
+		width:50%;
+		min-width:50%;
+	}
+	.w-1-3:last-of-type{
+		margin:0 25%;
+	}
 }
