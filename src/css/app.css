@@ -20,6 +20,14 @@ h3{
 	/*font-variant: small-caps;*/
 	text-transform: uppercase;	
 }
+a{	
+	margin:.5rem 0;
+	text-decoration: none;
+	color:#bcbbbb;
+}
+a:hover{
+	color:#bcbb00;
+}
 section:first-of-type{
 	border-top: 2px solid #bcbbbb;
 }
@@ -39,4 +47,10 @@ section:first-of-type{
 }
 .billboard{
 	text-align: center;
+}
+.circle{
+	border: .28rem solid #f8981c;
+	border-radius: 50%;
+	padding: 1rem;
+	display: inline-block; 
 }

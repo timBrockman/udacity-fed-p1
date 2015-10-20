@@ -8,12 +8,15 @@ body, h1,h2,h3,h4,p{
 	text-decoration: none;
 	color:#747704;	
 }
-/* {
+* {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     -ms-box-sizing: border-box;
     box-sizing: border-box;
-}*/ 
+}
+picture, source, img {
+	max-width:100%;
+}
 .screenshot{
 	max-width: 460px;
 }
