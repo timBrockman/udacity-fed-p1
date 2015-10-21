@@ -16,8 +16,9 @@ body, h1,h2,h3,h4,p{
 }
 picture, source, img {
 	max-width:100%;
+	object-fit: cover;
 }
-.screenshot{
+/*.screenshot{
 	max-width: 460px;
 }
 .description{
@@ -29,4 +30,4 @@ picture, source, img {
 .title{
 	background-color: #33BEBE;
 	color:#fff;
-}
+}*/
